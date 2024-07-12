@@ -1,0 +1,223 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Wrap all child views inside a LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="141dp"
+                    android:layout_height="119dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/account_img" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="#CFCAE6"
+                    android:text="Sign Up"
+                    android:textAlignment="center"
+                    android:textColor="#28CEFD"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_edit"
+                    android:drawableStart="@drawable/user_icon"
+                    android:drawablePadding="10dp"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#EDE7E7"
+                    android:textColorHighlight="#EBE2E2"
+                    android:textColorHint="#F8F6F6"
+                    android:textColorLink="#F1E7E7" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_edit"
+                    android:drawableStart="@drawable/email_icon"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#F8EEEE"
+                    android:textColorHighlight="#FBF6F6"
+                    android:textColorHint="#F1E9E9"
+                    android:textColorLink="#FDFAFA" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_edit"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="middle"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#EFE7E7"
+                    android:textColorHighlight="#EDE4E4"
+                    android:textColorHint="#F8F3F3"
+                    android:textColorLink="#EDE4E4" />
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_edit"
+                    android:drawableStart="@drawable/confirm_password"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#F1E9E9"
+                    android:textColorHighlight="#F3E7E7"
+                    android:textColorHint="#F8F3F3"
+                    android:textColorLink="#EFEAEA" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="#0DE6FD"
+                        android:foregroundTint="#0CE7FD"
+                        android:text="Gender"
+                        android:textColor="#F1EAEA"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/genderGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:text="Male"
+                                android:textColor="#F8F5F5" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:text="Female"
+                                android:textColor="#FBF7F7" />
+
+                            <RadioButton
+                                android:id="@+id/other"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Other"
+                                android:textColor="#F8F2F2" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="I agree to the Terms and Conditions"
+                        android:textColor="#E4E1E1"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/registerButton"
+                        android:layout_width="250dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="#0BA3DF"
+                        android:text="Register"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="30dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="5dp"
+                        android:text="Already Have an Account?"
+                        android:textColor="#F4EFEF"
+                        android:textSize="15.5sp" />
+
+                    <TextView
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign In"
+                        android:textColor="#13E0FD"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

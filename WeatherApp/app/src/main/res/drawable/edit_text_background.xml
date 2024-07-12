@@ -1,0 +1,17 @@
+<!-- res/drawable/edit_text_border.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#0b36e0" /> <!-- Black color for border -->
+            <padding
+                android:left="8dp"
+                android:top="8dp"
+                android:right="8dp"
+                android:bottom="8dp" />
+        </shape>
+    </item>
+</selector>

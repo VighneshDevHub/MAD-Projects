@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTitleStyle">
+        <item name="android:fontFamily">@font/latoblack</item>
+        <item name="android:textColor">#F3F8F8</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="ToolbarSubTitleStyle">
+        <item name="android:fontFamily">@font/latoblack</item>
+        <item name="android:textColor">#F9FAFA</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+</resources>
